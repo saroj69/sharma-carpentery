@@ -1,0 +1,409 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*https://www.robertcarpentry.com/*/
+.nav{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top: -30px;
+	background: transparent;
+	z-index: 10;
+/*	box-shadow: 1px 1px 3px black;*/
+}
+.nav li{
+	list-style: none;
+	padding: 0 30px;
+}
+.nav li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+.nav li img{
+	width: 350px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.slider{
+	width: 100%;
+	height: 550px;
+	position: absolute;
+	top: 100px;
+	animation: slider;
+	animation-duration: 12s;
+	animation-direction: revert-layer;
+	animation-iteration-count: infinite;
+}
+@keyframes slider{
+	0%{
+		background-image: url("https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529511039201-TWD48L5FLKU03MCI36FN/RC_HomeSlider_Web_4.jpg?format=1500w");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	25%{
+		background-image: url("https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529511042250-K6A2R5PM5I8CWT01RN9I/RC_HomeSlider_Web.jpg?format=1500w");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	50%{
+		background-image: url("https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529511036886-EOY0VX1RBT1OOXG4JSMS/RC_HomeSlider_Web_2.jpg?format=1500w");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	75%{
+		background-image: url("https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529511048994-HA8NB966KCPZLO7K3S9S/RC_HomeSlider_Web_3.jpg?format=1500w");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	100%{
+		background-image: url("https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529511039201-TWD48L5FLKU03MCI36FN/RC_HomeSlider_Web_4.jpg?format=1500w");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+#content{
+	position: absolute;
+	top: 100vh;
+	display: flex;
+	width: 100%;
+	height: 450px;
+}
+.content{
+	width: 65%;
+	height: 450px;
+	margin-left: 7rem;
+}
+.content h2{
+	color: #d6aa1a;
+	font-family: monospace;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 40px;
+}
+.content .h3{
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.content .h4{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: gray;
+}
+.content1{
+	width: 40%;
+	height: 450px;
+	float: right;
+	margin-left: 6rem;
+	margin-top: 5rem;
+}
+.content1 label{
+	font-family: sans-serif;
+	font-size: 25px;
+}
+.content1 p{
+	font-family: sans-serif;
+	font-family: 15px;
+	padding: 10px 0;
+}
+button{
+	padding: 20px;
+	border: 2px solid black;
+}
+button:hover{
+	background-color: black;
+	color: #fff;
+	cursor: pointer;
+}
+.image{
+	width: 100%;
+	height: 100vh;
+	top: 170vh;
+	position: absolute;
+
+}
+.image img{
+	width: 100%;
+	height: 100vh;
+}
+.image-text{
+	top: 170vh;
+	position: absolute;
+	background-color: black;
+	opacity: 0.4;
+	width: 100%;
+	height: 100vh;
+}
+.image-text p{
+	margin-top: 25%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 50px;
+	color: white;
+	letter-spacing: 10px;
+	opacity: 1;
+}
+.logo{
+	top: 235vh;
+	margin-left: 10cm;
+	position: absolute;
+}
+
+.pic{
+	top: 285vh;
+	position: relative;
+	width: 14inch;
+	display: inline-flex;
+	margin-left: 6rem;
+}
+.pic img{
+	width: 400px;
+	height: 500px;
+}
+.pic div{
+	margin-left: 6rem;
+	width: 40%;
+	margin-top: 4rem;
+}
+.pic div span{
+	font-family: monospace;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+.pic div p{
+	color: gray;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.pic li{
+	margin-left: 2rem;
+	color: gray;
+	padding-bottom: 10px;
+}
+.pic div li span{
+	font-size: 15px;
+	letter-spacing: 3px;
+	color: black;
+}
+/*.pic div button{
+	padding: 10px 20px;
+	margin-top: 20px;
+	border: 2px solid black;
+}
+.pic .con button a{
+	color: black;
+	text-decoration: none;
+}
+.pic .con button:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.pic .con button a:hover{
+	color: white;
+}*/
+.imagee{
+	margin-top: 300vh;
+}
+.imagee .add{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -30vh;
+	font-size: 30px;
+	color: white;
+	font-family: sans-serif;
+}
+.imagee p{
+	padding: 20px;
+}
+.imagee img{
+	width: 100%;
+	height: 600px;
+}
+.imagee .address{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -10vh;
+	font-size: 25px;
+	color: white;
+	font-family: sans-serif;
+}
+.imag img{
+	width: 400px;
+	height: 200px;
+}
+.imag{
+	margin-left: 38%;
+	margin-top: -60vh;
+}
+#three{
+	display: flex;
+	margin-top: 50vh;
+	justify-content: space-around;
+}
+#three div:hover{
+	margin-top: -50px;
+}
+
+#three div p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: black;
+}
+#Gallery{
+	padding-top: 10px;
+	width: 20cm;
+	margin-left: 4cm;
+	height: 250px;
+	/*justify-content: center;
+	align-items: center;*/
+	box-shadow: 0 0 black,0 1px gray,0 0 black,0 -1px gray;
+}
+#Gallery div{
+	text-align: center;
+	margin-top: 20px;
+}
+.six-image img{
+	width: 150px;
+	height: 100px;
+	padding: 0 5px;
+}
+.six-image{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.contact-form{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	background-image: url('https://images.squarespace-cdn.com/content/v1/58b484fe725e251157557d72/1529512780726-55ZZ4DPQLTU8BJS3JCAA/IMG_Continuum_RobertCarpentry21.jpg?format=1500w');
+	text-align: center;
+	background-color: black;
+}
+.form{
+	width: 600px;
+	display: grid;
+	text-align: left;
+}
+.form div{
+	text-align: center;
+}
+.form div h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: white;
+}
+.form div p{
+	font-size: 20px;
+	color: white;
+	font-family: serif;
+}
+.form label{
+	margin-bottom: -20px;
+	color: white;
+}
+.form input{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	margin-top: -10px;
+}
+.form span{
+	display: flex;
+}
+.form button{
+	background-color: transparent;
+	width: 100px;
+	height: 50px;
+	margin-left: 260px;
+	margin-top: 20px;
+	padding: 5px;
+}
+.form button:hover{
+	background-color: black;
+}
+.footer{
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 250px;
+}
+.link{
+	display: flex;
+	font-size: 15px;
+	align-items: center;
+}
+.link span a{
+	margin-left: 10px;
+	font-size: 30px;
+	padding: 5px;
+	color: #fff;
+}
+.logo-footer img{
+	width: 300px;
+	height: 150px;
+}
+.logo-footer{
+	padding-left: 150px;
+}
+.copy{
+	color: gray;
+	font-size: 15px;
+}
+.copy .nam{
+	color: #cccc00;
+}
+/*------------------------------------services page----------------------------------------------------------*/
+#services img{
+	width: 100%;
+	height: 500px;
+	opacity: 0.4;
+}
+#services{
+	width: 100%;
+	height: 500px;
+	background: black;
+}
+#services div{
+	margin-top: -25%;
+	margin-left: 35%;
+	color: white;
+}
+#services .ser{
+	font-size: 70px;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	margin-left: 1.5rem;
+	text-transform: uppercase;
+}
+#services div .resi{
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	font-family: sans-serif;
+}
+#services div .resi span{
+	padding: 10px;
+}
+.service-three{
+	display: flex;
+	justify-content: space-around;
+}
